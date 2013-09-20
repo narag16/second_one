@@ -41,6 +41,21 @@
 		<servlet-name>Jersey Rest Service1</servlet-name>
 		<url-pattern>/readme/*</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Try DB COnnection</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>com.second_one.dbConn</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Try DB COnnection</servlet-name>
+		<url-pattern>/dbConn/*</url-pattern>
+	</servlet-mapping>
+
 
 
 </web-app>

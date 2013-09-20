@@ -10,7 +10,7 @@ public class Oracle_weblogic {
 	private static Context context =null;
 	
 	
-	public static DataSource getConn() throws Exception
+	public static DataSource Oracle_Conn() throws Exception
 	{
 		
 		if(Oracle_weblogic!=null)
